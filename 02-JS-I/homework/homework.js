@@ -36,7 +36,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return suma (x + y)
+  return (x + y)
 }
 
 function resta(x, y) {
@@ -71,10 +71,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.lenght == str2.lenght) {
-    return true;
-  }
-  return false 
+  return str1.length === str2.length
 }
 
 function menosQueNoventa(num) {
@@ -109,10 +106,11 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {
+  if (num % 2 === 0) {
     return true;
+} else { 
+  return false 
 }
-else false
 }
 
 function esImpar(num) {
@@ -175,7 +173,7 @@ function esPositivo(numero) {
   if (numero < 0){
     return "Es negativo";
   }
-  else return "False"
+  else return false
 }
 
 function agregarSimboloExclamacion(str) {
@@ -196,7 +194,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ("Hola " + nombre)
+  return ("Hola " + nombre + "!")
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
